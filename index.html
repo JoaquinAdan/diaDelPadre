@@ -14,11 +14,13 @@
 <body>
         <!--Hey! This is the original version
 of Simple CSS Waves-->
-<div class="contenedor">
+<div class="contenedor" id="top">
     
     <div class="header">
         <nav class="nav">
-            <h1>¿Qué es lo que queres hacer?</h1>
+            <a href="#top" class="link-header">
+                <h1>¿Qué es lo que queres hacer?</h1>
+            </a>
         </nav>
         
         
@@ -26,24 +28,24 @@ of Simple CSS Waves-->
         <div class="inner-header flex">
             <div class="grid">
                 <div class="imprimir grid-icon" id="impresora">
-                    <a href="#">
-                        <img class="icono" id="impresoras" src="img/impresora.png" alt="icono impresora">
+                    <a href="#imprimir" class="link-imprimir">
+                        <img loading="lazy" class="icono" id="impresoras" src="img/impresora.png" alt="icono impresora">
                     </a>
-                    <a class="link-impresora" href="#">Imprimir</a>
+                    <a class="link-impresora" href="#imprimir">Imprimir</a>
                 </div>
 
                 <div class="pagina grid-icon" id="buscar">
-                    <a href="#">
-                        <img class="icono" id="busquedas" src="img/buscar.png" alt="icono busqueda">
+                    <a href="#buscar-pagina">
+                        <img loading="lazy" class="icono" id="busquedas" src="img/buscar.png" alt="icono busqueda">
                     </a>
-                    <a class="link-busqueda" href="#">buscar<br>pagina</a>
+                    <a class="link-busqueda" href="#buscar-pagina">buscar<br>pagina</a>
                 </div>
 
                 <div class="cuenta grid-icon" id="cuenta">
-                    <a href="#">
-                        <img class="icono" id="cuentas" src="img/cuenta.png" alt="icono cuenta">
+                    <a href="#ingresar-cuenta">
+                        <img loading="lazy" class="icono" id="cuentas" src="img/cuenta.png" alt="icono cuenta">
                     </a>
-                    <a class="link-cuenta" href="#">
+                    <a class="link-cuenta" href="#ingresar-cuenta">
                         <span class="texto-arriba">Ingresar</span>
                         <span class="texto-abajo">cuenta</span>
                     </a>
@@ -51,7 +53,7 @@ of Simple CSS Waves-->
 
                 <div class="buscar grid-icon" id="lupa">
                     <a href="#">
-                        <img class="icono" id="lupas" src="img/lupa.png" alt="icono lupa">
+                        <img loading="lazy" class="icono" id="lupas" src="img/lupa.png" alt="icono lupa">
                     </a>
                     <a class="link-lupa" href="#">
                         <span class="texto-arriba">Buscar</span>
@@ -76,20 +78,79 @@ of Simple CSS Waves-->
                 </g>
             </svg>
         </div>
-    </div>
+    </div >
 </div>
 
-<div class="contenedor-imprimir">
+
+<div class="grid-doble" id="imprimir">
+    <h2 class="centrar" >IMPRIMIR</h2>
+    <h2>Presiona CTRL + P </h2>
+    <h2>Desplegara una ventana como esta</h2>
+    <img loading="lazy" src="img/ctrlp.png" alt="imagen de control mas p" class="ctrlp">
     <div>
-        <img src="img/ctrlp.png" alt="imagen de control mas p">
-        <div>
-            <img src="img/imprimir.png" alt="">
-        </div>
+        <img loading="lazy" src="img/imprimir.png" alt="captura de pantalla de impresion" class="imagen-captura">
     </div>
+    <p class="informacion"  id="buscar-pagina">Cuidado con la opcion de "Paginás", si es una pagina grande vas a imprimir
+    todas las paginas, elegi la opcion "Personalizado" y elegi la pagina que queres imprimir, luego 
+    presiona el boton azul y listo.</p>
 </div>
-    
-    
-    
+
+<div class="grid-multiple">  
+    <h2 class="titulo-busqueda">BUSCAR PAGINA</h2>
+    <h2 class="titulo-busqueda">Podes buscar tu pagina en el navegador de google</h2>
+    <img loading="lazy" class="imagen-google" src="img/navegadorgoogle.png" alt="navegador de google">
+    <h2 class="titulo-busqueda2">Tambien podes apretar alguno de estos iconos, te redigiran</h2>
+    <div class="border-netflix border">
+        <img src="img/netflix.png" class="imagenes-web netflix" alt="netflix">
+    </div>   
+    <div class="border-disney border">
+        <img loading="lazy" src="img/disneyplus.png" class="imagenes-web disney" alt="disney plus">
+    </div> 
+    <div class="border-prime border">
+        <img loading="lazy" src="img/primevideo.png" class="imagenes-web prime" alt="prime video">
+    </div> 
+    <div class="border-banco border">
+        <img loading="lazy" src="img/banco.png" class="imagenes-web banco" alt="banco">
+    </div> 
+    <div class="border-youtube border">
+        <img loading="lazy" src="img/youtube.png" class="imagenes-web youtube" alt="youtube">
+    </div> 
+</div>
+
+<div class="grid-triple" >
+    <h2 class="titulo-inicio" id="ingresar-cuenta">INICIAR SESIÓN</h2>
+    <div>
+        <button class="boton boton-0"></button>
+    </div>
+    <div>
+        <button class="boton boton-1"></button>
+    </div>
+    <div>
+        <button class="boton boton-2"></button>
+    </div>
+    <div class="formulario">
+        <form >
+            <legend>Formulario de ejemplo</legend>
+            <div class="campo">
+                <label class="campo__label" for="nombre">Nombre</label>
+                <input class="campo__field" type="text" placeholder="Nombre" id="nombre">
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="email">E-mail</label>
+                <input class="campo__field" type="email" placeholder="E-mail" id="email">
+            </div>
+            <div>
+            </div class="campo">
+                <label class="campo__label" for="contraseña">Contraseña</label>
+                <input class="campo__field" type="password" placeholder="Contraseña" id="contraseña">
+            <div class="campo">
+                <input class="campo__field" type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+    <p class="informacion">Luego completa con los datos de la cuenta de respectiva pagina. Si no los tienes, pideselo 
+    a alguien que los pueda tener y intenta ingresar los datos vos.</p>
+</div>
 
     <script src="index.js"></script>
 </body>
