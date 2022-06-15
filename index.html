@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"  ="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia Del Padre</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet"></head>
+<body>
+        <!--Hey! This is the original version
+of Simple CSS Waves-->
+<div class="contenedor">
+    
+    <div class="header">
+        <nav class="nav">
+            <h1>¿Qué es lo que queres hacer?</h1>
+        </nav>
+        
+        
+        <!--Content before waves-->
+        <div class="inner-header flex">
+            <div class="grid">
+                <div class="imprimir grid-icon" id="impresora">
+                    <a href="#">
+                        <img class="icono" id="impresoras" src="img/impresora.png" alt="icono impresora">
+                    </a>
+                    <a class="link-impresora" href="#">Imprimir</a>
+                </div>
+
+                <div class="pagina grid-icon" id="buscar">
+                    <a href="#">
+                        <img class="icono" id="busquedas" src="img/buscar.png" alt="icono busqueda">
+                    </a>
+                    <a class="link-busqueda" href="#">buscar<br>pagina</a>
+                </div>
+
+                <div class="cuenta grid-icon" id="cuenta">
+                    <a href="#">
+                        <img class="icono" id="cuentas" src="img/cuenta.png" alt="icono cuenta">
+                    </a>
+                    <a class="link-cuenta" href="#">
+                        <span class="texto-arriba">Ingresar</span>
+                        <span class="texto-abajo">cuenta</span>
+                    </a>
+                </div>
+
+                <div class="buscar grid-icon" id="lupa">
+                    <a href="#">
+                        <img class="icono" id="lupas" src="img/lupa.png" alt="icono lupa">
+                    </a>
+                    <a class="link-lupa" href="#">
+                        <span class="texto-arriba">Buscar</span>
+                        <span class="texto-abajo">temporada</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <!--Waves Container-->
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<div class="contenedor-imprimir">
+    <div>
+        <img src="img/ctrlp.png" alt="imagen de control mas p">
+        <div>
+            <img src="img/imprimir.png" alt="">
+        </div>
+    </div>
+</div>
+    
+    
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
